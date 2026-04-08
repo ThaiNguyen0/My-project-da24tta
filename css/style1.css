@@ -1,0 +1,12 @@
+h1 { color: white; }
+h2 { color: white; }
+h3 { color: white; }
+
+body {
+	color: white;
+  background-image: url('../css/background2.jpg');
+  background-repeat: no-repeat;    /* Không lặp lại ảnh */
+  background-position: center;     /* Căn giữa ảnh */
+  background-size: cover;          /* Phủ kín toàn bộ phần tử */
+  background-attachment: fixed;    /* Cố định nền khi cuộn trang */
+}
