@@ -1,6 +1,10 @@
 *{
-  font-family:'Arial';
-  
+  font-family:'Sans-serif';
+  background-image: url('../css/bg1.jpg');
+  background-repeat: no-repeat;    /* Không lặp lại ảnh */
+  background-position: center;     /* Căn giữa ảnh */
+  background-size: cover;          /* Phủ kín toàn bộ phần tử */
+  background-attachment: fixed;    /* Cố định nền khi cuộn trang */
   padding: 2px;
   color:whitesmoke;
   margin: 5px auto;
@@ -8,21 +12,25 @@
   
 }
 div.container{
-background-color: rgba(0, 0, 0, 0.842);
+background-color: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(5px);
+padding: 40px;
 margin-left: 50px;
 margin-right: 50px;
-padding: 30px;
+border-radius: 10px
+width: 100%;
+  max-width: 400px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
 }
 form#frmLogin{
 background-color: rgb(92, 89, 89);
 padding: 10px;
 text-align:center;
+font-weight: 600;
 }
-
-
 h3#title{
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color:rgba(255, 255, 255, 0.87);
 }
 div.form-group{
@@ -38,5 +46,5 @@ input.form-control{
 input.button{
 background-color: rgb(55, 117, 209);
 border-radius: 10px;
-padding: 5px;
+padding: 10px;
 }
