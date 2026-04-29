@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Thông tin sản phẩm</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script>
+    
+    const myDiv = document.createElement("div");
+    myDiv.setAttribute("class", "product-item");
+
+    
+    const myDiv1 = document.createElement("div");
+    myDiv1.setAttribute("class", "product-image");
+
+    
+    const myDiv2 = document.createElement("div");
+    myDiv2.setAttribute("class", "product-info");
+
+    
+    const productImage = document.createElement("img");
+    productImage.setAttribute("src", "../assets/image/vf3.jpg");
+    productImage.setAttribute("alt", "Xe điện");
+    productImage.setAttribute("height", "400px");
+    myDiv1.appendChild(productImage); 
+
+    
+    const productInfo = document.createElement("p"); 
+    productInfo.textContent = "Xe điện VF3";
+
+    
+    const productInfo1 = document.createElement("p"); 
+    productInfo1.textContent = "Giá 315.000.000đ";
+
+    
+	const p3 = document.createElement("p");
+	const link =document.createElement("a");
+	link.setAttribute("href", "https://vinfastotominhdao.vn/vinfast/vf3/");
+	link.setAttribute("target","_blank");
+	link.textContent = "chi tiết sản phẩm";
+    p3.appendChild(link);
+	myDiv2.appendChild(productInfo);
+    myDiv2.appendChild(productInfo1);
+	myDiv2.appendChild(p3);
+
+    myDiv.appendChild(myDiv1); 
+    myDiv.appendChild(myDiv2); 
+
+    
+    document.body.appendChild(myDiv);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
